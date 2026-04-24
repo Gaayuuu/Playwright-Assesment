@@ -47,11 +47,12 @@ export class ShopPage {
     await this.page.locator(ShopPageLocators.checkout.step2Guest).click();
 
     console.log('Filling address details...');
+    await this.page.fill(ShopPageLocators.checkout.country, user.country);
+    await this.page.fill(ShopPageLocators.checkout.postalCode, user.zip);
+    await this.page.fill(ShopPageLocators.checkout.housenumber, user.housenumber);
     await this.page.fill(ShopPageLocators.checkout.street, user.street);
     await this.page.fill(ShopPageLocators.checkout.city, user.city);
     await this.page.fill(ShopPageLocators.checkout.state, user.state);
-    await this.page.fill(ShopPageLocators.checkout.country, user.country);
-    await this.page.fill(ShopPageLocators.checkout.postalCode, user.zip);
 
     console.log('Address details filled. Proceeding to step 3...');
     await this.page.locator(ShopPageLocators.checkout.step3).click();

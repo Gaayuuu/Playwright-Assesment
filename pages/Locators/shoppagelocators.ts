@@ -16,6 +16,7 @@ export const ShopPageLocators = {
     city: '[data-test="city"]',
     state: '[data-test="state"]',
     country: '[data-test="country"]',
+    housenumber: '[data-test="house_number"]',
     postalCode: '[data-test="postal_code"]',
   },
   payment: {
