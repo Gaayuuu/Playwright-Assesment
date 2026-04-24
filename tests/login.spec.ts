@@ -19,7 +19,7 @@ test.describe('Login Tests - QA', () => {
     await page.goto(process.env.BASE_URL!);
     await loginPage.goToLogin();
     await loginPage.login(process.env.EMAIL!, process.env.PASSWORD!);
-    await loginPage.menubar(); 
+    await loginPage.waitForLoginSuccess(); 
 
 
   });
