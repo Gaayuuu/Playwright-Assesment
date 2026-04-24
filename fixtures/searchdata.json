@@ -1,0 +1,9 @@
+{
+    "searchTerms": {
+      "exact": "Hammer",
+      "partial": "Ham",
+      "caseInsensitive": "hammer",
+      "invalid": "xyz123",
+      "integrity": "Screwdriver"
+    }
+  }
